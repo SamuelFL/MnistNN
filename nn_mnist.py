@@ -58,7 +58,7 @@ y = tf.nn.softmax(tf.matmul(x, W) + b)
 
 loss = tf.reduce_sum(tf.square(y_ - y))
 
-train = tf.train.GradientDescentOptimizer(0.01).minimize(loss)
+train = tf.train.GradientDescentOptimizer(0.05).minimize(loss)
 
 init = tf.global_variables_initializer()
 
